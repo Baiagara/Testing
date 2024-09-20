@@ -1,0 +1,189 @@
+/* General Section Styling */
+.read-before-come,
+.registration-info,
+.before-registration {
+  max-width: 1000px; /* Unify width across all sections */
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f5faff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Read Before You Come Section */
+.read-before-come {
+  background-color: #e8f1f6;
+  padding: 40px;
+}
+
+.read-before-come h2 {
+  font-size: 28px;
+  color: #006494;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #006494;
+  padding-bottom: 10px;
+}
+
+.read-before-come p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.read-before-come ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.read-before-come li {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.read-before-come li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #00a8cc;
+  font-size: 20px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.volunteer-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Registration Info Section */
+
+.registration-info h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.registration-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.registration-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.registration-info li {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.registration-info li strong {
+  color: #2980b9;
+}
+
+.registration-info li::before {
+  content: "✓";
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+}
+.registration-info a {
+  color: #27ae60;
+  text-decoration: none;
+  font-weight: bold;
+}
+.registration-info a:hover {
+  text-decoration: underline;
+}
+/* Before Registration Section */
+
+.before-registration h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.before-registration p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.before-registration a {
+  color: #27ae60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.before-registration a:hover {
+  text-decoration: underline;
+}
+
+.before-registration strong {
+  color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #For-Application {
+    font-size: 16px;
+    padding: 12px 25px; /* Adjust padding for mobile */
+  }
+}
+
+/* Flexbox adjustments for content layout */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+  min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .volunteer-image {
+    max-width: 100%;
+  }
+}
